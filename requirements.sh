@@ -35,5 +35,9 @@ SQLWHAT_VERSION="v0.4.0"
 SQLBACKEND_VERSION="fix-error-output"
 
 ## Install sqlwhat and sqlbackend
+# IS IT WORKING????
+
+#
+
 pip3 install git+https://github.com/datacamp/sqlwhat@$SQLWHAT_VERSION
 pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git/@$SQLBACKEND_VERSION
