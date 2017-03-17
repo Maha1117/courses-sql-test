@@ -31,10 +31,9 @@ rm $zipfile $tarfile
 
 # disable for now, is in shared image.
 ## Define versions
-#SQLWHAT_VERSION="v0.0.7"
-#SQLBACKEND_VERSION="v0.0.13"
+SQLWHAT_VERSION="v0.4.0"
+SQLBACKEND_VERSION="fix-error-output"
 
 ## Install sqlwhat and sqlbackend
-#pip3 install git+https://github.com/datacamp/pythonwhat@master
-#pip3 install git+https://github.com/datacamp/sqlwhat@$SQLWHAT_VERSION
-#pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git/@$SQLBACKEND_VERSION
+pip3 install git+https://github.com/datacamp/sqlwhat@$SQLWHAT_VERSION
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git/@$SQLBACKEND_VERSION
