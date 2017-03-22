@@ -32,7 +32,7 @@ rm $zipfile $tarfile
 # disable for now, is in shared image.
 ## Define versions
 SQLWHAT_VERSION="v0.4.1"
-SQLBACKEND_VERSION="v0.0.17"
+SQLBACKEND_VERSION="v0.0.18"
 
 ## Install sqlwhat and sqlbackend
 # IS IT WORKING????
