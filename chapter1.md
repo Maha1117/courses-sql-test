@@ -32,7 +32,7 @@ SELECT film_id, title FROM film;
 ```
 
 
---- type:MultipleChoiceExercise lang:sql xp:50 skills:1 key:565ae9c1eb
+--- type:MultipleChoiceExercise xp:50 key:565ae9c1eb
 ## Example of MultipleChoiceExercise
 
 This is a sql multiple choice exercise.
@@ -57,7 +57,7 @@ msg4 = "Wrong 3"
 Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 ```
 
---- type:NormalExercise lang:sql xp:100 skills:1 key:b88e30c6b7
+--- type:NormalExercise xp:100 key:b88e30c6b7
 ## Example of NormalExercise testing where clause
 
 *** =instructions
@@ -88,6 +88,5 @@ SELECT * FROM film WHERE film_id < 5
 Ex().check_result()
 Ex().check_statement("select") \
     .check_clause("where_clause") \
-    .has_equal_ast(msg="result looks correct, but ast doesn't match")
+    .has_equal_ast(msg="result looks correct, but AST doesn't match")
 ```
-

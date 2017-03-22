@@ -2,14 +2,16 @@
 title       : Sqlwhat exercises
 description : Insert the chapter description here
 
---- type:NormalExercise lang:sql xp:100 skills:1 key:ac7a0c0a73
+--- type:NormalExercise xp:100 key:ac7a0c0a73
 ## Basic Select
 
-
+Basic select exercise
 
 *** =instructions
+Experiment
 
 *** =hint
+Here's a hint
 
 *** =pre_exercise_code
 ```{sql}
@@ -24,7 +26,6 @@ SELECT ____ FROM film
 *** =solution
 ```{sql}
 SELECT * FROM film
-
 ```
 
 *** =sct
@@ -35,8 +36,9 @@ Ex().check_statement("select") \
     .has_equal_ast(sql="SELECT * FROM film", start="subquery")    # subquery is the parser rule for select stmt
 ```
 
---- type:NormalExercise lang:sql xp:100 skills:1 key:14ba4a79a8
+--- type:NormalExercise xp:100 key:14ba4a79a8
 ## Where clause
+
 
 ### Fail - too few rows
 
@@ -50,11 +52,11 @@ SELECT * FROM film WHERE film_id < 4
 SELECT * FROM film WHERE 5 > film_id
 ```
 
-
-
 *** =instructions
+Experiment!
 
 *** =hint
+Here's a hint
 
 *** =pre_exercise_code
 ```{sql}
@@ -80,7 +82,7 @@ Ex().check_statement("select") \
     .has_equal_ast(msg="result looks correct, but ast doesn't match")
 ```
 
---- type:NormalExercise lang:sql xp:100 skills:1 key:29421f7816
+--- type:NormalExercise xp:100 key:29421f7816
 ## Checking result
 
 #### Fail - too few columns
@@ -125,12 +127,11 @@ SELECT film_id, length as title FROM film
 INSERT INTO film VALUES {TODO}
 ```
 
-
-
-
 *** =instructions
+instructions
 
 *** =hint
+hint
 
 *** =pre_exercise_code
 ```{sql}
@@ -153,6 +154,5 @@ Ex().test_ncols()     # check has same number of columns
 Ex().test_nrows()     # check has same number of rows
 Ex().test_column(name="film_id", match="any")
 Ex().test_column(name="title", match="exact")
-
 Ex().test_has_columns()    # check has any columns at all
 ```
