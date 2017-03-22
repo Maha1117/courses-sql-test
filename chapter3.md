@@ -22,7 +22,6 @@ connect('postgresql', 'dvdrental')
 NormalExercise
 
 *** =key1: e7cd8d45cb0
-*** =xp1: 50
 
 *** =instructions1
 Do some stuff
@@ -42,7 +41,6 @@ SELECT film_id, title FROM film;
 MultipleChoiceExercise
 
 *** =key2: 216ce6d2106
-*** =xp2: 50
 
 *** =question2
 What do you think?
