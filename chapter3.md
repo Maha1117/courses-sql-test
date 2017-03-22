@@ -90,7 +90,7 @@ SELECT film_id, title FROM film;
 *** =sct1
 ```{python}
 # not supported yet
-Ex().success_msg('You are fabulous!')
+# Ex().success_msg('You are fabulous!')
 ```
 
 *** =type2
