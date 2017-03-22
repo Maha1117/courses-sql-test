@@ -63,7 +63,7 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 --- type:BulletExercise key:ac8d4e05c2
 ## BulletExercise
 
-This is a bullet exercise.
+This is a Bullet exercise.
 XP should be defined at subexercise level.
 
 *** =pre_exercise_code
@@ -90,7 +90,7 @@ SELECT film_id, title FROM film;
 *** =sct1
 ```{python}
 # not supported yet
-Ex().success_msg('You are fabulous')
+Ex().success_msg('You are fabulous!')
 ```
 
 *** =type2
@@ -109,5 +109,5 @@ SELECT film_id, title FROM film
 *** =sct2
 ```{python}
 # not supported yet
-#success_msg('You are fabulous')
+# success_msg('You are fabulous')
 ```
