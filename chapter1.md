@@ -10,6 +10,9 @@ This is a SQL normal exercise.
 *** =instructions
 - Just experiment!
 
+*** =hint
+Here's a hint
+
 *** =pre_exercise_code
 ```{python}
 connect('postgresql', 'dvdrental')
@@ -61,11 +64,10 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 ## Example of NormalExercise testing where clause
 
 *** =instructions
-
 - Select all columns from the `film` table, where `film_id` is less than 5.
 
-
 *** =hint
+Here's a hint
 
 *** =pre_exercise_code
 ```{sql}
