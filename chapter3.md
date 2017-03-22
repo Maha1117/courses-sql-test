@@ -63,7 +63,7 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 --- type:BulletExercise key:ac8d4e05c2
 ## BulletExercise
 
-This is a Bullet exercise.
+This is a bullet exercise.
 XP should be defined at subexercise level.
 
 *** =pre_exercise_code
