@@ -33,8 +33,7 @@ SELECT film_id, title FROM film;
 
 *** =sct1
 ```{python}
-# not supported yet
-# success_msg('You are fabulous')
+Ex().check_result()
 ```
 
 *** =type2
@@ -89,8 +88,7 @@ SELECT film_id, title FROM film;
 
 *** =sct1
 ```{python}
-# not supported yet
-# Ex().success_msg('You are fabulous!')
+Ex().check_result()
 ```
 
 *** =type2
@@ -108,6 +106,5 @@ SELECT film_id, title FROM film
 
 *** =sct2
 ```{python}
-# not supported yet
-# success_msg('You are fabulous')
+Ex().check_result()
 ```

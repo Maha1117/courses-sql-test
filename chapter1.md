@@ -30,8 +30,7 @@ SELECT film_id, title FROM film;
 
 *** =sct
 ```{python}
-# not supported yet
-# success_msg('You are fabulous')
+Ex().check_result()
 ```
 
 
