@@ -65,7 +65,7 @@ XP should be defined at subexercise level.
 connect('postgresql', 'dvdrental')
 ```
 
-*** =sample_code:
+*** =sample_code
 ```{python}
 -- sql code comes here.
 ```
