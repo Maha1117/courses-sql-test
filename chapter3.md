@@ -60,17 +60,37 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 This is a bullet exercise.
 XP should be defined at subexercise level.
 
-*** =pre_exercise_code: connect('postgresql', 'dvdrental')
-*** =sample_code: -- sql code comes here.
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'dvdrental')
+```
+
+*** =sample_code:
+```{python}
+-- sql code comes here.
+```
 
 *** =type1: NormalExercise
 *** =key1: f4b7465ve8467
 *** =instructions1: Do some stuff
-*** =solution1: SELECT film_id, title FROM film;
-*** =sct1: Ex().check_result()
+*** =solution1:
+```{sql}
+SELECT film_id, title FROM film;
+```
+*** =sct1:
+```{python}
+Ex().check_result()
+```
 
 *** =type2: NormalExercise
 *** =key2: fd34f3517f35
 *** =instructions2: Do some stuff part 2.
-*** =solution2: SELECT film_id, title FROM film
-*** =sct2: Ex().check_result()
+*** =solution2:
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct2:
+```{python}
+Ex().check_result()
+```
