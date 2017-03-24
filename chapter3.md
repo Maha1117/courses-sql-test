@@ -36,6 +36,7 @@ Ex().check_result()
 
 *** =type2: MultipleChoiceExercise
 *** =key2: 216ce6d2106
+
 *** =question2
 What do you think?
 
@@ -72,6 +73,7 @@ connect('postgresql', 'dvdrental')
 
 *** =type1: NormalExercise
 *** =key1: f4b7465ve8467
+
 *** =instructions1: Do some stuff
 *** =solution1
 ```{sql}
@@ -84,6 +86,7 @@ Ex().check_result()
 
 *** =type2: NormalExercise
 *** =key2: fd34f3517f35
+
 *** =instructions2: Do some stuff part 2.
 *** =solution2
 ```{sql}
