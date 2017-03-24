@@ -39,7 +39,6 @@ Ex().check_statement("select") \
 --- type:NormalExercise xp:100 key:14ba4a79a8
 ## Where clause
 
-
 ### Fail - too few rows
 
 ```

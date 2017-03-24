@@ -79,6 +79,7 @@ connect('postgresql', 'dvdrental')
 ```{sql}
 SELECT film_id, title FROM film;
 ```
+
 *** =sct1
 ```{python}
 Ex().check_result()
