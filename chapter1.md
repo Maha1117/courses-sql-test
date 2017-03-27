@@ -86,7 +86,4 @@ SELECT * FROM film WHERE film_id < 5
 *** =sct
 ```{sql}
 Ex().check_result()
-Ex().check_statement("select") \
-    .check_clause("where_clause") \
-    .has_equal_ast(msg="result looks correct, but AST doesn't match")
 ```
