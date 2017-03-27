@@ -32,8 +32,8 @@ SELECT * FROM film
 ```{sql}
 Ex().check_result()
 Ex().has_equal_ast()
-Ex().check_statement("select") \
-    .has_equal_ast(sql="SELECT * FROM film", start="subquery")    # subquery is the parser rule for select stmt
+#Ex().node("select") \
+#    .has_equal_ast(sql="SELECT * FROM film", start="subquery")    # subquery is the parser rule for select stmt
 ```
 
 --- type:NormalExercise xp:100 key:14ba4a79a8
@@ -76,9 +76,9 @@ SELECT * FROM film WHERE film_id < 5
 *** =sct
 ```{sql}
 Ex().check_result()
-Ex().check_statement("select") \
-    .check_clause("where_clause") \
-    .has_equal_ast(msg="result looks correct, but ast doesn't match")
+#Ex().check_node("select") \
+#    .check_clause("where_clause") \
+#    .has_equal_ast(msg="result looks correct, but ast doesn't match")
 ```
 
 --- type:NormalExercise xp:100 key:29421f7816
