@@ -5,7 +5,7 @@ description : This thing is meant to test subexercises
 --- type:TabExercise key:ed98f7522c
 ## TabExercise
 
-This is a tabexercise. Great!
+This is a tabexercise. Great
 XP should be defined at subexercise level.
 
 *** =pre_exercise_code
@@ -110,7 +110,7 @@ Ex().check_result()
 --- type:BulletExercise key:ac8d4e05c2
 ## BulletExercise
 
-This is a bullet exercise. Great!
+This is a bullet exercise. Great
 XP should be defined at subexercise level.
 
 *** =pre_exercise_code
