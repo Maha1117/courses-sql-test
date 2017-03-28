@@ -55,6 +55,44 @@ msg4 = "Wrong 3"
 Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 ```
 
+*** =type3: NormalExercise
+
+*** =instructions3: Do some stuff part 3.
+*** =solution3
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct3
+```{python}
+Ex().check_result()
+```
+
+*** =type4: NormalExercise
+*** =instructions4: Do some stuff part 4.
+*** =solution4
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct4
+```{python}
+Ex().check_result()
+```
+
+*** =type5: NormalExercise
+*** =instructions5: Do some stuff part 4.
+*** =solution5
+```{sql}
+SELECT film_id, title FROM film
+```
+
+*** =sct5
+```{python}
+Ex().check_result()
+```
+
+
 --- type:BulletExercise key:ac8d4e05c2
 ## BulletExercise
 
