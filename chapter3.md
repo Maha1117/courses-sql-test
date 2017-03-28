@@ -57,6 +57,8 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 
 *** =type3: NormalExercise
 
+*** =key3: 46ca5d0c2f
+
 *** =instructions3: Do some stuff part 3.
 *** =solution3
 ```{sql}
@@ -69,6 +71,8 @@ Ex().check_result()
 ```
 
 *** =type4: NormalExercise
+*** =key4: ab7f2e7cad
+
 *** =instructions4: Do some stuff part 4.
 *** =solution4
 ```{sql}
@@ -81,6 +85,8 @@ Ex().check_result()
 ```
 
 *** =type5: NormalExercise
+*** =key5: ea81c5ea34
+
 *** =instructions5: Do some stuff part 4.
 *** =solution5
 ```{sql}
