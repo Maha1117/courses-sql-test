@@ -57,7 +57,7 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 
 *** =type3: NormalExercise
 
-*** =key3: 46ca5d0c2f
+*** =key3: f643f41db4
 
 *** =instructions3: Do some stuff part 3.
 *** =solution3
@@ -71,7 +71,7 @@ Ex().check_result()
 ```
 
 *** =type4: NormalExercise
-*** =key4: ab7f2e7cad
+*** =key4: 2805953617
 
 *** =instructions4: Do some stuff part 4.
 *** =solution4
@@ -85,7 +85,7 @@ Ex().check_result()
 ```
 
 *** =type5: NormalExercise
-*** =key5: ea81c5ea34
+*** =key5: b78ff98e7e
 
 *** =instructions5: Do some stuff part 4.
 *** =solution5
