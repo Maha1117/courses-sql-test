@@ -32,6 +32,5 @@ rm $zipfile $tarfile
 ## Define versions (override shared image for easier development)
 SQLWHAT_VERSION="v1.1.1"
 SQLBACKEND_VERSION="v0.0.23"
-# NOTE: using defaults again
-#pip3 install git+https://github.com/datacamp/sqlwhat@$SQLWHAT_VERSION
-#pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git/@$SQLBACKEND_VERSION
+pip3 install git+https://github.com/datacamp/sqlwhat@$SQLWHAT_VERSION
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git/@$SQLBACKEND_VERSION
