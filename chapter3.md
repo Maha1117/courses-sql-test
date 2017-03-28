@@ -5,7 +5,7 @@ description : This thing is meant to test subexercises
 --- type:TabExercise xp:100 key:ed98f7522c
 ## TabExercise
 
-This is a tabexercise.
+This is a tabexercise. ASF
 XP should be defined at subexercise level.
 
 *** =pre_exercise_code
