@@ -5,7 +5,7 @@ description : This thing is meant to test subexercises
 --- type:TabExercise key:ed98f7522c
 ## TabExercise
 
-This is a tabexercise. Great!
+This is a tabexercise. Great! Super great!
 XP should be defined at subexercise level.
 
 *** =pre_exercise_code
@@ -19,7 +19,7 @@ connect('postgresql', 'dvdrental')
 ```
 
 *** =type1: NormalExercise
-*** =xp1: 50
+*** =xp1: 10
 *** =key1: e7cd8d45cb0
 
 *** =instructions1
@@ -36,7 +36,7 @@ Ex().check_result()
 ```
 
 *** =type2: MultipleChoiceExercise
-*** =xp2: 50
+*** =xp2: 20
 *** =key2: 216ce6d2106
 
 *** =question2
@@ -58,7 +58,7 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 ```
 
 *** =type3: NormalExercise
-*** =xp3: 50
+*** =xp3: 30
 *** =key3: f643f41db4
 
 *** =instructions3: Do some stuff part 3.
@@ -73,7 +73,7 @@ Ex().check_result()
 ```
 
 *** =type4: NormalExercise
-*** =xp4: 50
+*** =xp4: 40
 *** =key4: 2805953617
 
 *** =instructions4: Do some stuff part 4.
