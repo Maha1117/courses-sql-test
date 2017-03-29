@@ -5,7 +5,7 @@ description : Testing SQL
 --- type:NormalExercise xp:100 key:c778ff1b1a
 ## Example of NormalExercise
 
-This is a SQL normal exercise.
+This is a SQL normal exercise, with explicit write access in the PEC.
 
 *** =instructions
 - Just experiment!
@@ -16,6 +16,7 @@ Here's a hint
 *** =pre_exercise_code
 ```{python}
 connect('postgresql', 'dvdrental')
+set_options(write_access=True)
 ```
 
 *** =sample_code
@@ -61,6 +62,8 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 
 --- type:NormalExercise xp:100 key:b88e30c6b7
 ## Example of NormalExercise testing where clause
+
+This is a normal exercise
 
 *** =instructions
 - Select all columns from the `film` table, where `film_id` is less than 5.
