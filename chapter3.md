@@ -6,7 +6,7 @@ description : This thing is meant to test subexercises
 ## TabExercise
 
 This is a tabexercise. Great! Super great!
-XP should be defined at the subexercise level.
+XP should be defined at the subexercise level
 
 *** =pre_exercise_code
 ```{python}
@@ -107,7 +107,7 @@ Ex().check_result()
 ## BulletExercise
 
 This is a bullet exercise. Great!
-XP should be defined at the subexercise level.
+XP should be defined at the subexercise level
 
 *** =pre_exercise_code
 ```{python}
