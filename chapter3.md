@@ -25,6 +25,9 @@ connect('postgresql', 'dvdrental')
 *** =instructions1
 Do some stuff
 
+*** =hint1
+Here's a hint!
+
 *** =solution1
 ```{sql}
 SELECT film_id, title FROM film;
@@ -60,6 +63,8 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 *** =type3: NormalExercise
 *** =xp3: 30
 *** =key3: f643f41db4
+*** =hint3
+Here's a hint for instruction 3
 
 *** =instructions3: Do some stuff part 3.
 *** =solution3
