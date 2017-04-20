@@ -26,7 +26,7 @@ connect('postgresql', 'dvdrental')
 Do some stuff
 
 *** =hint1
-Here's a hint!
+Here's a hint for instruction 1
 
 *** =solution1
 ```{sql}
