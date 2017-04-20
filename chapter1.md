@@ -117,15 +117,15 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 *** =sct
 ```{sql}
 
-def sct_target_call(state, code, call_name):
+def sct_select_target_call(state, code, call_name):
     msg_no_call = "Did you use the function `%s` in your code?" % call_name
     msg_incorrect_call = "Is your code for `%s` correct?"%call_name
     
     check_node(state, 'Call', missing_msg = msg_no_call, priority=99)
     has_equal_ast(state, msg_incorrect_call, sql=code, start='standard_function', exact = False)
 
-Ex().check_node('SelectStmt').check_field('target_list', 0) \
-    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
+Ex().check_node('SelectStmt') \
+    .multi(lambda state: sct_select_target_call(state, "COUNT(*)", "COUNT"))
     
 ```
 
