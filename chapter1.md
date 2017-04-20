@@ -115,9 +115,11 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 ```
 
 *** =sct
-```{sql}
+```{python}
 
-def sct_select_target_call(state, code, call_name):
+# Note: this is to demonstrate that normal sqlwhat tests can be created in an
+#       sct block.
+def sct_target_call(state, code, call_name):
     msg_no_call = "Did you use the function `%s` in your code?" % call_name
     msg_incorrect_call = "Is your code for `%s` correct?"%call_name
     
@@ -125,7 +127,7 @@ def sct_select_target_call(state, code, call_name):
     has_equal_ast(state, msg_incorrect_call, sql=code, start='standard_function', exact = False)
 
 Ex().check_node('SelectStmt') \
-    .multi(lambda state: sct_select_target_call(state, "COUNT(*)", "COUNT"))
+    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
     
 ```
 
@@ -138,13 +140,41 @@ Ex().check_node('SelectStmt') \
 *** =hint
 
 *** =pre_exercise_code
-```{sql}
+```{python}
+# Note this is hacky, but demonstrates loading external SCTs
+# TODO: provide convenience function for requirements.sh to
+#       where user specifies link to helper file, e.g. (in bash)
+#           custom_scts course_3165/datasets/sct_helper.py
+#
+#       custom SCT file is then copied into site-packages, or somewhere similar
+import urllib.request
+import sys, imp
+
+# download code that was uploaded as course asset
+# since teach does not accept .py files, just used .txt
+code = urllib.request.urlopen('https://s3.amazonaws.com/assets.datacamp.com/production/course_3165/datasets/sct_helper.txt').read()
+
+# create a new module from code
+mod = imp.new_module('sct_helpers')
+exec(code, mod.__dict__)
+
+# put module into sys.modules (which is where a module is put during an import statement)
+sys.modules['sct_helpers'] = mod
+
 connect("postgresql", "dvdrental")
 ```
 
 *** =sample_code
 ```{sql}
+-- correct answer
 SELECT COUNT(*) FROM film WHERE film_id < 5
+
+-- no COUNT func
+-- SELECT id FROM film WHERE film_id < 5
+
+-- wrong COUNT func
+-- SELECT COUNT(id) FROM film WHERE film_id < 5
+
 ```
 
 *** =solution
@@ -154,7 +184,8 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 
 *** =sct
 ```{sql}
-#Ex().check_node('SelectStmt').check_field('target_list', 0) \
-#    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
+from sct_helpers import sct_target_call
+Ex().check_node('SelectStmt') \
+    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
     
 ```
