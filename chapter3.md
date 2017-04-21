@@ -53,10 +53,10 @@ What do you think?
 
 *** =sct2
 ```{python}
-msg1 = "Wrong 1"
+msg1 = "Option 1 is wrong.."
 msg2 = "Option 2 is correct, great!"
-msg3 = "Wrong 2"
-msg4 = "Wrong 3"
+msg3 = "Option 3 is wrong.."
+msg4 = "Option 4 is wrong.."
 Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 ```
 
