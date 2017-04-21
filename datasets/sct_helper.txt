@@ -1,0 +1,8 @@
+from sqlwhat.checks import *
+
+def sct_target_call(state, code, call_name):
+    msg_no_call = "Did you use the function `%s` in your code?" % call_name
+    msg_incorrect_call = "Is your code for `%s` correct?"%call_name
+    
+    check_node(state, 'Call', missing_msg = msg_no_call, priority=99)
+    has_equal_ast(state, msg_incorrect_call, sql=code, start='standard_function', exact = False)
