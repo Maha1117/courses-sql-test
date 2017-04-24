@@ -1,5 +1,7 @@
 from sqlwhat.checks import *
+from sqlwhat.sct_syntax import state_dec
 
+@state_dec
 def sct_target_call(state, code, call_name):
     msg_no_call = "Did you use the function `%s` in your code?" % call_name
     msg_incorrect_call = "Is your code for `%s` correct?"%call_name
