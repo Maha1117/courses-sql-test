@@ -29,4 +29,5 @@ service postgresql start \
 
 rm $zipfile $tarfile
 
+#rebuild!
 pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@feature-preload-hook
