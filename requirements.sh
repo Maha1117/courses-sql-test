@@ -28,3 +28,5 @@ service postgresql start \
   && service postgresql stop
 
 rm $zipfile $tarfile
+
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@feature-preload-hook
