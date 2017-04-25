@@ -118,8 +118,8 @@ Ex().check_result()
 ```
 
 
---- type:BulletExercise key:0c415aad79
-## BulletExercise
+--- type:BulletExercise
+## BulletExercise Example
 
 This is a tabexercise. Great! Super great!
 XP should be defined at the subexercise level
