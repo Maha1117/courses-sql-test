@@ -132,7 +132,7 @@ Ex().check_node('SelectStmt') \
 ```
 
 --- type:NormalExercise lang:sql xp:100 skills:1 key:63a6c51e9d
-## SCT helpers UNLEASHEDDDD
+## SCT helpers UNLEASHED
 
 
 *** =instructions
@@ -168,14 +168,13 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 *** =sct
 ```{sql}
 from sct_extensions import sct_target_call
-Ex().check_node('SelectStmt') \
-    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
+Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
     
 ```
 
 
 --- type:NormalExercise lang:sql xp:100 skills:1 key:eb396c543d
-## SCT helpers UNLEASHEDDDD (2)
+## SCT helpers EX SHOULD FAIL
 
 
 *** =instructions
@@ -208,8 +207,10 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 
 *** =sct
 ```{sql}
+# should raise error, since extensions not loaded
 from sct_extensions import sct_target_call
-Ex().check_node('SelectStmt') \
-    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
-    
+
+from sct_extensions import sct_target_call
+Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
+
 ```
