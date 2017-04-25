@@ -118,70 +118,8 @@ Ex().check_result()
 ```
 
 
---- type:BulletExercise key:ac8d4e05c2
-## BulletExercise
-
-This is a bullet exercise. Great!
-XP should be defined at the subexercise level
-
-*** =pre_exercise_code
-```{python}
-connect('postgresql', 'dvdrental')
-```
-
-*** =sample_code
-```{python}
--- sql code comes here.
-```
-
-*** =type1: NormalExercise
-*** =xp1: 50
-*** =key1: f4b7465ve8467
-
-*** =instructions1: Do some stuff
-*** =solution1
-```{sql}
-SELECT film_id, title FROM film;
-```
-
-*** =sct1
-```{python}
-Ex().check_result()
-```
-
-*** =type2: NormalExercise
-*** =xp2: 50
-*** =key2: fd34f3517f35
-
-*** =instructions2: Do some stuff part 2.
-*** =solution2
-```{sql}
-SELECT film_id, title FROM film
-```
-
-*** =sct2
-```{python}
-Ex().check_result()
-```
-
-
-*** =type3: NormalExercise
-*** =xp3: 50
-*** =key3: 1f85f63e9a
-
-*** =instructions3: Do some stuff part 3.
-*** =solution3
-```{sql}
-SELECT film_id, title FROM film
-```
-
-*** =sct3
-```{python}
-Ex().check_result()
-```
-
 --- type:BulletExercise key:0c415aad79
-## BulletExercise 2
+## BulletExercise
 
 This is a tabexercise. Great! Super great!
 XP should be defined at the subexercise level
