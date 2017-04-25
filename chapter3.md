@@ -180,7 +180,7 @@ SELECT film_id, title FROM film
 Ex().check_result()
 ```
 
---- type:BulletExercise key:ed98f7522c
+--- type:BulletExercise key:fd0fe7b82c
 ## BulletExercise 2
 
 This is a tabexercise. Great! Super great!
@@ -198,7 +198,7 @@ connect('postgresql', 'dvdrental')
 
 *** =type1: NormalExercise
 *** =xp1: 10
-*** =key1: e7cd8d45cb0
+*** =key1: d6b2d80106
 
 *** =instructions1
 Select the `film_id` from film
@@ -218,7 +218,7 @@ Ex().check_result()
 
 *** =type2: NormalExercise
 *** =xp2: 20
-*** =key2: f643f41db4
+*** =key2: bcb41e85f9
 
 *** =instructions2
 Select the `film_id` and `release_year` from `film`.
@@ -238,7 +238,7 @@ Ex().check_result()
 
 *** =type3: NormalExercise
 *** =xp3: 30
-*** =key3: f643f41db4
+*** =key3: 11a6ef73b7
 
 *** =instructions3
 Select the `film_id` and `title` from `film`.
@@ -258,7 +258,7 @@ Ex().check_result()
 
 *** =type4: NormalExercise
 *** =xp4: 40
-*** =key4: 2805953617
+*** =key4: 17f30b9a93
 
 *** =instructions4
 Select all columns from `film`.
@@ -275,7 +275,7 @@ Ex().check_result()
 
 *** =type5: NormalExercise
 *** =xp5: 50
-*** =key5: b78ff98e7e
+*** =key5: df842e59bc
 
 *** =instructions5
 Get all columns from `film`, but just get 5 rows.
