@@ -136,7 +136,6 @@ connect('postgresql', 'dvdrental')
 
 *** =type1: NormalExercise
 *** =xp1: 10
-*** =key1: 6f24d6b83e
 
 *** =instructions1
 Select the `film_id` from film
@@ -156,7 +155,6 @@ Ex().check_result()
 
 *** =type2: NormalExercise
 *** =xp2: 20
-*** =key2: a2bdf24e72
 
 *** =instructions2
 Select the `film_id` and `release_year` from `film`.
@@ -176,7 +174,6 @@ Ex().check_result()
 
 *** =type3: NormalExercise
 *** =xp3: 30
-*** =key3: 23c3851420
 
 *** =instructions3
 Select the `film_id` and `title` from `film`.
@@ -196,7 +193,7 @@ Ex().check_result()
 
 *** =type4: NormalExercise
 *** =xp4: 40
-*** =key4: d80ef59dc4
+
 
 *** =instructions4
 Select all columns from `film`.
@@ -213,7 +210,6 @@ Ex().check_result()
 
 *** =type5: NormalExercise
 *** =xp5: 50
-*** =key5: d3e911dad5
 
 *** =instructions5
 Get all columns from `film`, but just get 5 rows.
