@@ -28,3 +28,7 @@ service postgresql start \
   && service postgresql stop
 
 rm $zipfile $tarfile
+
+#rebuild!!!!!!!!!
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@feature-preload-hook
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlwhat.git@feature-sct-compose --upgrade

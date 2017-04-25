@@ -132,7 +132,7 @@ Ex().check_node('SelectStmt') \
 ```
 
 --- type:NormalExercise lang:sql xp:100 skills:1 key:63a6c51e9d
-## SCT helpers UNLEASHEDDDD
+## SCT helpers UNLEASHED
 
 
 *** =instructions
@@ -141,25 +141,8 @@ Ex().check_node('SelectStmt') \
 
 *** =pre_exercise_code
 ```{python}
-# Note this is hacky, but demonstrates loading external SCTs
-# TODO: provide convenience function for requirements.sh to
-#       where user specifies link to helper file, e.g. (in bash)
-#           custom_scts course_3165/datasets/sct_helper.py
-#
-#       custom SCT file is then copied into site-packages, or somewhere similar
-import urllib.request
-import sys, imp
 
-# download code that was uploaded as course asset
-# since teach does not accept .py files, just used .txt
-code = urllib.request.urlopen('https://s3.amazonaws.com/assets.datacamp.com/production/course_3165/datasets/sct_helper.txt').read()
-
-# create a new module from code
-mod = imp.new_module('sct_helpers')
-exec(code, mod.__dict__)
-
-# put module into sys.modules (which is where a module is put during an import statement)
-sys.modules['sct_helpers'] = mod
+load_sct_ext('https://s3.amazonaws.com/assets.datacamp.com/production/course_3165/datasets/sct_helper.txt')
 
 connect("postgresql", "dvdrental")
 ```
@@ -184,8 +167,50 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 
 *** =sct
 ```{sql}
-from sct_helpers import sct_target_call
-Ex().check_node('SelectStmt') \
-    .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
+from sct_extensions import sct_target_call
+Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
     
+```
+
+
+--- type:NormalExercise lang:sql xp:100 skills:1 key:eb396c543d
+## SCT helpers EX SHOULD FAIL
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{python}
+
+connect("postgresql", "dvdrental")
+```
+
+*** =sample_code
+```{sql}
+-- correct answer
+SELECT COUNT(*) FROM film WHERE film_id < 5
+
+-- no COUNT func
+-- SELECT id FROM film WHERE film_id < 5
+
+-- wrong COUNT func
+-- SELECT COUNT(id) FROM film WHERE film_id < 5
+
+```
+
+*** =solution
+```{sql}
+SELECT COUNT(*) FROM film WHERE film_id < 5
+```
+
+*** =sct
+```{sql}
+# should raise error, since extensions not loaded
+from sct_extensions import sct_target_call
+
+from sct_extensions import sct_target_call
+Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
+
 ```
