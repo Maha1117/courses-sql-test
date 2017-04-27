@@ -10,9 +10,6 @@ Basic select exercise
 *** =instructions
 Experiment
 
-*** =hint
-Here's a hint
-
 *** =pre_exercise_code
 ```{sql}
 connect('postgresql', 'dvdrental')
@@ -53,9 +50,6 @@ SELECT * FROM film WHERE 5 > film_id
 
 *** =instructions
 Experiment!
-
-*** =hint
-Here's a hint
 
 *** =pre_exercise_code
 ```{sql}
@@ -128,9 +122,6 @@ INSERT INTO film VALUES {TODO}
 
 *** =instructions
 instructions
-
-*** =hint
-hint
 
 *** =pre_exercise_code
 ```{sql}
