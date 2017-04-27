@@ -227,7 +227,7 @@ SELECT * FROM film LIMIT 5
 Ex().check_result()
 ```
 
---- type:BulletExercise
+--- type:NormalExercise
 ## BulletExercise 2
 
 This is a SQL normal exercise, with explicit write access in the PEC.
@@ -259,7 +259,7 @@ SELECT film_id, title FROM film;
 Ex().check_result()
 ```
 
---- type:BulletExercise
+--- type:NormalExercise
 ## BulletExercise
 
 This is a SQL normal exercise, with explicit write access in the PEC.
