@@ -118,7 +118,7 @@ Ex().check_result()
 ```
 
 
---- type:BulletExercise key:c7a90c47b5
+--- type:BulletExercise key:d15a96d74d
 ## BulletExercise Example
 
 This is a tabexercise. Great! Super great!
@@ -135,7 +135,7 @@ connect('postgresql', 'dvdrental')
 ```
 
 *** =type1: NormalExercise
-*** =key1: 17fb51e1fb
+*** =key1: 305a9cd694
 
 *** =xp1: 10
 
@@ -156,7 +156,7 @@ Ex().check_result()
 ```
 
 *** =type2: NormalExercise
-*** =key2: 0e5b9884bc
+*** =key2: c50a86da71
 
 *** =xp2: 20
 
@@ -177,7 +177,7 @@ Ex().check_result()
 ```
 
 *** =type3: NormalExercise
-*** =key3: d3074060cf
+*** =key3: 8ffbe5cc42
 
 *** =xp3: 30
 
@@ -198,7 +198,7 @@ Ex().check_result()
 ```
 
 *** =type4: NormalExercise
-*** =key4: d60bba8c52
+*** =key4: 6f869be978
 
 *** =xp4: 40
 
@@ -217,7 +217,7 @@ Ex().check_result()
 ```
 
 *** =type5: NormalExercise
-*** =key5: 90a9ce16f3
+*** =key5: 746069fa49
 
 *** =xp5: 50
 
@@ -237,7 +237,7 @@ SELECT * FROM film LIMIT 5
 Ex().check_result()
 ```
 
---- type:NormalExercise key:fd0fe7b82c
+--- type:NormalExercise key:4cebe71ea3
 ## BulletExercise 2
 
 This is a SQL normal exercise, with explicit write access in the PEC.
