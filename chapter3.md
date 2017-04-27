@@ -226,3 +226,67 @@ SELECT * FROM film LIMIT 5
 ```{python}
 Ex().check_result()
 ```
+
+--- type:BulletExercise
+## BulletExercise 2
+
+This is a SQL normal exercise, with explicit write access in the PEC.
+
+*** =instructions
+- Just experiment!
+
+*** =hint
+Here's a hint
+
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'dvdrental')
+set_options(write_access=True)
+```
+
+*** =sample_code
+```{sql}
+-- sql code comes here
+```
+
+*** =solution
+```{sql}
+SELECT film_id, title FROM film;
+```
+
+*** =sct
+```{python}
+Ex().check_result()
+```
+
+--- type:BulletExercise
+## BulletExercise
+
+This is a SQL normal exercise, with explicit write access in the PEC.
+
+*** =instructions
+- Just experiment!
+
+*** =hint
+Here's a hint
+
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'dvdrental')
+set_options(write_access=True)
+```
+
+*** =sample_code
+```{sql}
+-- sql code comes here
+```
+
+*** =solution
+```{sql}
+SELECT film_id, title FROM film;
+```
+
+*** =sct
+```{python}
+Ex().check_result()
+```
