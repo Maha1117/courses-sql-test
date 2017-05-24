@@ -34,6 +34,41 @@ SELECT film_id, title FROM film;
 Ex().check_result()
 ```
 
+--- type:NormalExercise xp:100
+## Example of NormalExercise 2
+
+This is a SQL normal exercise, with some additional options specified in the PEC:
+
+- write access
+- only the `film` table is shown.
+
+*** =instructions
+- Just experiment!
+
+*** =hint
+Here's a hint
+
+*** =pre_exercise_code
+```{python}
+connect('postgresql', 'dvdrental')
+set_options(write_access=True, visible_tables = ['film'])
+```
+
+*** =sample_code
+```{sql}
+-- sql code comes here
+```
+
+*** =solution
+```{sql}
+SELECT film_id, title FROM film;
+```
+
+*** =sct
+```{python}
+Ex().check_result()
+```
+
 
 --- type:MultipleChoiceExercise xp:50 key:565ae9c1eb
 ## Example of MultipleChoiceExercise
@@ -122,13 +157,13 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 def sct_target_call(state, code, call_name):
     msg_no_call = "Did you use the function `%s` in your code?" % call_name
     msg_incorrect_call = "Is your code for `%s` correct?"%call_name
-    
+
     check_node(state, 'Call', missing_msg = msg_no_call, priority=99)
     has_equal_ast(state, msg_incorrect_call, sql=code, start='standard_function', exact = False)
 
 Ex().check_node('SelectStmt') \
     .multi(lambda state: sct_target_call(state, "COUNT(*)", "COUNT"))
-    
+
 ```
 
 --- type:NormalExercise lang:sql xp:100 skills:1 key:63a6c51e9d
@@ -169,7 +204,7 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 ```{sql}
 from sct_extensions import sct_target_call
 Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
-    
+
 ```
 
 
@@ -209,8 +244,5 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 ```{sql}
 # should raise error, since extensions not loaded
 from sct_extensions import sct_target_call
-
-from sct_extensions import sct_target_call
 Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
-
 ```
