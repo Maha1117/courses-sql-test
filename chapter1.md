@@ -34,7 +34,7 @@ SELECT film_id, title FROM film;
 Ex().check_result()
 ```
 
---- type:NormalExercise xp:100
+--- type:NormalExercise xp:100 key:a312d201ae
 ## Example of NormalExercise 2
 
 This is a SQL normal exercise, with some additional options specified in the PEC:
