@@ -5,7 +5,7 @@ description : Testing SQL
 --- type:NormalExercise xp:100 key:c778ff1b1a
 ## Example of NormalExercise
 
-This is a SQL normal exercise, with explicit write access in the PEC.
+This is a SQL normal exercise.
 
 *** =instructions
 - Just experiment!
@@ -16,7 +16,6 @@ Here's a hint
 *** =pre_exercise_code
 ```{python}
 connect('postgresql', 'dvdrental')
-set_options(write_access=True)
 ```
 
 *** =sample_code
