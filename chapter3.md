@@ -1,9 +1,9 @@
 ---
 title       : SCT Examples
 description : Insert the chapter description here
+
 --- type:NormalExercise lang:sql xp:100 skills:1 key:ce43470333
 ## Where clauses with multiple expressions
-
 
 *** =instructions
 
@@ -16,7 +16,7 @@ connect('postgres', 'dvdrental')
 
 *** =sample_code
 ```{sql}
-SELECT * 
+SELECT *
 FROM film
 WHERE film_id < 5
 AND release_year = 2006;
@@ -24,7 +24,7 @@ AND release_year = 2006;
 
 *** =solution
 ```{sql}
-SELECT * 
+SELECT *
 FROM film
 WHERE release_year = 2006
 AND film_id < 5;

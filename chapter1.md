@@ -169,16 +169,13 @@ Ex().check_node('SelectStmt') \
 --- type:NormalExercise lang:sql xp:100 skills:1 key:63a6c51e9d
 ## SCT helpers UNLEASHED
 
-
 *** =instructions
+- hit submit answer
 
-*** =hint
 
 *** =pre_exercise_code
 ```{python}
-
 load_sct_ext('https://s3.amazonaws.com/assets.datacamp.com/production/course_3165/datasets/sct_helper.txt')
-
 connect("postgresql", "dvdrental")
 ```
 
@@ -202,47 +199,6 @@ SELECT COUNT(*) FROM film WHERE film_id < 5
 
 *** =sct
 ```{sql}
-from sct_extensions import sct_target_call
-Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
-
-```
-
-
---- type:NormalExercise lang:sql xp:100 skills:1 key:eb396c543d
-## SCT helpers EX SHOULD FAIL
-
-
-*** =instructions
-
-*** =hint
-
-*** =pre_exercise_code
-```{python}
-
-connect("postgresql", "dvdrental")
-```
-
-*** =sample_code
-```{sql}
--- correct answer
-SELECT COUNT(*) FROM film WHERE film_id < 5
-
--- no COUNT func
--- SELECT id FROM film WHERE film_id < 5
-
--- wrong COUNT func
--- SELECT COUNT(id) FROM film WHERE film_id < 5
-
-```
-
-*** =solution
-```{sql}
-SELECT COUNT(*) FROM film WHERE film_id < 5
-```
-
-*** =sct
-```{sql}
-# should raise error, since extensions not loaded
 from sct_extensions import sct_target_call
 Ex().check_node('SelectStmt') + sct_target_call("COUNT(*)", "COUNT")
 ```
