@@ -29,7 +29,5 @@ service postgresql start \
 
 rm $zipfile $tarfile
 
-# #rebuild!!!!!!!!!
-# export DC_SCT_EXTENSIONS='https://s3.amazonaws.com/assets.datacamp.com/production/course_3165/datasets/sct_helper.txt'
-# pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@feature-preload-hook
-# pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlwhat.git@feature-sct-compose --upgrade
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@enhance/messaging
+pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlwhat.git
