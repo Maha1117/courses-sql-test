@@ -16,24 +16,17 @@ connect('postgres', 'dvdrental')
 
 *** =sample_code
 ```{sql}
-SELECT *
-FROM film
-WHERE film_id < 5
-AND release_year = 2006;
+SELECT film_id, title FROM film;
 ```
 
 *** =solution
 ```{sql}
-SELECT *
-FROM film
-WHERE release_year = 2006
-AND film_id < 5;
+SELECT film_id, title FROM film;
 ```
 
 *** =sct
 ```{sql}
+from sqlwhat_ext import check_result2
 
-Ex().check_node('SelectStmt') \
-    .check_field('where_clause') \
-    .has_equal_ast(sql = "film_id < 5", start="expression", exact = False)
+check_result2(['film_id', 'title'])
 ```
