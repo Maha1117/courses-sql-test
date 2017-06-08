@@ -29,5 +29,6 @@ service postgresql start \
 
 rm $zipfile $tarfile
 
-pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@enhance/messaging
-pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlwhat.git
+pip3 install sqlwhat-ext==0.0.1
+#pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@enhance/messaging
+#pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlwhat.git
