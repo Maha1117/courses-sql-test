@@ -35,6 +35,7 @@ SELECT film_id FROM film;
 
 *** =sct1
 ```{python}
+# SCT NUMBER 1
 Ex().check_result()
 ```
 
@@ -53,6 +54,7 @@ What do you think?
 
 *** =sct2
 ```{python}
+# SCT NUMBER 2
 msg1 = "Option 1 is wrong.."
 msg2 = "Option 2 is correct, great!"
 msg3 = "Option 3 is wrong.."
@@ -77,6 +79,7 @@ SELECT film_id, title FROM film
 
 *** =sct3
 ```{python}
+# SCT NUMBER 3
 Ex().check_result()
 ```
 
@@ -94,6 +97,7 @@ SELECT * FROM film
 
 *** =sct4
 ```{python}
+# SCT NUMBER 4
 Ex().check_result()
 ```
 
@@ -114,6 +118,7 @@ SELECT * FROM film LIMIT 5
 
 *** =sct5
 ```{python}
+# SCT NUMBER 5
 Ex().check_result()
 ```
 
