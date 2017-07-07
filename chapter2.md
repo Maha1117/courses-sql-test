@@ -51,6 +51,10 @@ What do you think?
 - Three
 - Four
 
+*** =sample_code2
+```{sql}
+```
+
 *** =sct2
 ```{python}
 msg1 = "Option 1 is wrong.."
