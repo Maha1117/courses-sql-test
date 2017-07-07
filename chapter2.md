@@ -13,11 +13,6 @@ XP should be defined at the subexercise level
 connect('postgresql', 'dvdrental')
 ```
 
-*** =sample_code
-```{sql}
--- sql code comes here
-```
-
 *** =type1: NormalExercise
 *** =xp1: 10
 *** =key1: e7cd8d45cb0
@@ -27,6 +22,11 @@ Select the `film_id` from film
 
 *** =hint1
 Here's a hint for instruction 1: use `film_id`
+
+*** =sample_code1
+```{sql}
+SELECT film_id FROM ___;
+```
 
 *** =solution1
 ```{sql}
@@ -64,6 +64,11 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 *** =xp3: 30
 *** =key3: f643f41db4
 
+*** =sample_code3
+```{sql}
+SELECT ___, ___ FROM ___;
+```
+
 *** =instructions3
 Select the `film_id` and `title` from `film`.
 
@@ -87,6 +92,11 @@ Ex().check_result()
 *** =instructions4
 Select all columns from `film`.
 
+*** =sample_code4
+```{sql}
+SELECT ___ FROM ___;
+```
+
 *** =solution4
 ```{sql}
 SELECT * FROM film
@@ -106,6 +116,11 @@ Get all columns from `film`, but just get 5 rows.
 
 *** =hint5
 Here's a hint for task 5: Use `LIMIT 5`.
+
+*** =sample_code4
+```{sql}
+___
+```
 
 *** =solution5
 ```{sql}
