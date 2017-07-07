@@ -117,7 +117,7 @@ Get all columns from `film`, but just get 5 rows.
 *** =hint5
 Here's a hint for task 5: Use `LIMIT 5`.
 
-*** =sample_code4
+*** =sample_code5
 ```{sql}
 ___
 ```
