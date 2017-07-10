@@ -1,5 +1,5 @@
 ---
-title       : Testing subexercises
+title       : Testing subexercises (Tab and Bullet)
 description : This thing is meant to test subexercises
 
 --- type:TabExercise key:ed98f7522c
