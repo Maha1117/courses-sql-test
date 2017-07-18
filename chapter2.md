@@ -25,7 +25,7 @@ Here's a hint for instruction 1: use `film_id`
 
 *** =sample_code1
 ```{sql}
-SELECT film_id FROM film;
+SELECT * FROM film;
 ```
 
 *** =solution1
