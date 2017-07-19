@@ -3,9 +3,10 @@ title       : Testing SQL
 description : Testing SQL
 
 --- type:ExamExercise xp:100 key:c778ff1b1a
-## Example of NormalExercise
+## Example of ExamExercise
 
-This is a SQL normal exercise.
+This is an ExamExercise.
+It's behavior is specified in [this github issue](https://github.com/datacamp/campus-app/issues/911).
 
 *** =instructions
 - Just experiment!
