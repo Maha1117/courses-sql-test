@@ -2,7 +2,7 @@
 title       : Testing SQL
 description : Testing SQL
 
---- type:NormalExercise xp:100 key:c778ff1b1a
+--- type:ExamExercise xp:100 key:c778ff1b1a
 ## Example of NormalExercise
 
 This is a SQL normal exercise.
@@ -124,4 +124,3 @@ SELECT * FROM film WHERE film_id < 5
 ```{sql}
 Ex().check_result()
 ```
-
