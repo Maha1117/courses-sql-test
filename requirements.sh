@@ -1,4 +1,4 @@
-# Option 1: set up dummy database
+# # Option 1: set up dummy database
 #sqlcode="CREATE TABLE Persons (id int, name varchar(255));
 #INSERT INTO Persons (id, name) VALUES (1, 'Herve'), (2, 'Ludo'),(3, 'Michael'), (4, 'Filip');
 #CREATE TABLE Cities (id int, name varchar(255));
@@ -28,7 +28,3 @@ service postgresql start \
   && service postgresql stop
 
 rm $zipfile $tarfile
-
-pip3 install sqlwhat-ext==0.0.1
-#pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlbackend.git@enhance/messaging
-#pip3 install git+https://$GITHUB_TOKEN@github.com/datacamp/sqlwhat.git
