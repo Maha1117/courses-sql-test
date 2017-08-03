@@ -17,6 +17,7 @@ Here's a hint
 *** =pre_exercise_code
 ```{python}
 connect('postgresql', 'dvdrental')
+set_options(view_schema = 'public')
 ```
 
 *** =sample_code
