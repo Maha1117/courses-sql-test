@@ -2,6 +2,8 @@
 title       : Testing SQL
 description : Testing SQL
 
+
+
 --- type:ExamExercise xp:100 key:c778ff1b1a
 ## Example of ExamExercise
 
@@ -318,4 +320,48 @@ SELECT * FROM film LIMIT 5
 *** =sct5
 ```{python}
 Ex().check_result()
+```
+
+
+
+--- type:NormalExercise lang:sql xp:100 skills:1 key:b0e3736134
+## Test issue
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{sql}
+connect('postgresql', 'dvdrental')
+```
+
+*** =sample_code
+```{sql}
+-- sql code comes here
+SELECT *
+FROM customer c
+JOIN store s
+ON s.id = c.store_id
+```
+
+*** =solution
+```{sql}
+SELECT *
+FROM customer c
+JOIN store s
+ON s.store_id = c.store_id
+```
+
+*** =sct
+```{sql}
+(Ex().check_node('SelectStmt')
+     .check_field('from_clause')
+     .check_field('cond')
+     .has_equal_ast(sql='s.store_id = c.store_id', 
+                    start='expression',
+                    exact=False,
+                    msg='Is your join condition correct?')
+    )
 ```
