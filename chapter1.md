@@ -340,7 +340,7 @@ connect('postgresql', 'dvdrental')
 SELECT *
 FROM customer c
 JOIN store s
-ON s.store_id = c.store_id
+ON s.id = c.store_id
 ```
 
 *** =solution
@@ -353,7 +353,12 @@ ON s.store_id = c.store_id
 
 *** =sct
 ```{sql}
-sel = Ex().check_node('SelectStmt')
-from_clause = sel.check_field('from_clause')
-cond = from_clause.check_field('cond').has_equal_ast(sql='s.store_id = c.store_id', start='expression', exact=False, msg='Is your join condition correct?')
+(Ex().check_node('SelectStmt')
+     .check_field('from_clause')
+     .check_field('cond')
+     .has_equal_ast(sql='s.store_id = c.store_id', 
+                    start='expression',
+                    exact=False,
+                    msg='Is your join condition correct?')
+    )
 ```
