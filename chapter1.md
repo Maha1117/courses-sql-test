@@ -237,7 +237,6 @@ SELECT film_id FROM film;
 
 *** =sct1
 ```{python}
-Ex().test_student_typed('NOSDFLKJEFLKJSEFLKJF')
 Ex().check_result()
 ```
 
